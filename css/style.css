@@ -1,0 +1,239 @@
+/* layout*/
+body {background: #f1f4fb url(../img/body_bg.gif) }
+
+#wrap { }
+#header {width: 100%; height: 327px; /*background-image: url(../img/header_bg.jpg);
+background-repeat: repeat-x; background-position: center top;*/ background: url(../img/header_bg.jpg) repeat-x center top;}
+#contents {width: 100%; }
+#footer {width: 100%; height: 180px; border-top: 1px solid #ccc; margin-top : 30px; background-color: #edf0f5;}
+
+/* 이미지를 표현하는 방법
+1. HTML 태그를 통해서 표현하는 방법(의미가 있는 이미지)(alt:대체 문자)
+2. CSS 속성을 통해서 표현하는 방법(의미가 없는 이미지)
+3. 이미지 스프라이트 방법(IR효과)
+*/
+
+/* container (가운데)*/
+.container {position: relative; width: 990px; /*background-color: rgba(225,255,255,0.4);*/ margin: 0 auto;}
+
+/* contents layout (전체배경)*/
+#cont-nav { background: url(../img/cont_nav_bg.png) repeat-x; }
+#cont-tit { background-color: #fff;}
+#cont-ban { background-color: #dceff7;}
+#cont-cont { }
+
+/*quick*/
+.quick {text-align : right;}
+.quick a {color: #fff; padding: 5px 0 0 10px; display: inline-block;}
+.quick a:hover {color: #ccc;}
+
+/*title
+.title {text-align: center;}
+.title p {background-color: #2698cb; font-size: 28px; display: inline-block; color: white; margin-top: 100px; padding: 5px 15px; text-transform: uppercase;}
+.title h1 {margin-top: -5px;}
+.title h1 a {background-color: #4aa8d4; font-size: 18px; color: #fff; text-transform: capitalize; padding: 5px 15px; display: inline-block; }*/
+
+.title {}
+.title p {background-color: #2698cb; font-size: 28px; color:#fff; padding: 5px 15px; text-transform:  uppercase; position: absolute; left: 342px; top:105px;}
+.title h1{position: absolute; left:428px; top: 153px;}
+.title h1 a { background-color: #4aa8d4; font-size: 18px; color: #fff; text-transform: capitalize; padding: 5px 15px; display: block;}
+
+/*icon*/
+.icon {position: absolute; left: 370px; top:220px;  }
+.icon ul {overflow: hidden;}
+.icon li {float: left; }
+.icon li a {width: 57px; height: 57px; display: block; margin: 0 3px; background-image: url(../img/icon.png);}
+.icon li.icon-tit1 a {  }
+.icon li.icon-tit2 a {background-position: 0 -120px;  }
+.icon li.icon-tit3 a {background-position: 0 -240px;  }
+.icon li.icon-tit4 a {background-position: 0 -360px;  }
+.icon li.icon-tit1 a:hover {background-position:0 -60px;;  }
+.icon li.icon-tit2 a:hover {background-position: 0 -180px;  }
+.icon li.icon-tit3 a:hover {background-position: 0 -300px;  }
+.icon li.icon-tit4 a:hover {background-position: 0 -420px;  }
+
+/*nav*/
+.nav {overflow: hidden; padding: 20px 0; }
+.nav div {float: left; width: 40%; }
+.nav div h3 {font-size: 18px; color: #25a2d0;}
+.nav div ul {overflow: hidden;}
+.nav div ul li {width: 50%; float: left;  }
+.nav div ul li a {color: #333; padding: 3px;}
+.nav div ul li a:hover {background-color: #1a96d0; color: #fff;}
+.nav div.last {width: 20%; }
+.nav div.last ul li {width: 100%;}
+
+/*tit*/
+.tit {}
+.tit h2 {text-align: center; font-size: 39px; color: #2c94c4; letter-spacing : 2px; font-family: 'Nanum Brush Script';}
+.tit .btn {position: absolute; right: 0; top: 5px; display: block; width: 57px; height: 57px; background: url(../img/icon.png) 0 -540px; }
+.tit .btn:hover {background-position: 0 -480px;}
+
+/*ban*/
+.ban {padding: 30px 0 15px 0;}
+.ban .ban-prev {position : absolute; left: -30px; top: 60px; background: url(../img/arrow.gif); display:block; width: 23px;height: 43px;}
+.ban .ban-next {position : absolute;  right: -30px; top: 60px; display: block; width: 23px; height: 43px; background: url(../img/arrow.gif) 0 -43px; }
+.ban ul {overflow: hidden; }
+.ban ul li {float: left; width: 330px; text-align: center; font-size:0;}
+.ban ul li a img {border: 4px solid #dcdcdc;}
+.ban ul li a:hover img {border-color: #98bcdc;}
+.ban .ban-prev:hover {background-position: 23px 0;}
+.ban .ban-next:hover {background-position: 23px -43px;}
+
+/*cont layout*/
+.cont {overflow: hidden; padding-top: 30px; }
+.cont .box {position: relative; width: 289px; height: 364px; float: left; margin: 0 30px 30px 0; padding-right: 30px; }
+.cont .box1 {border-right: 1px solid #c8c8c8; }
+.cont .box2 {border-right: 1px solid #c8c8c8; }
+.cont .box3 {margin-right: 0; padding-right: 0; }
+.cont .box4 {border-right: 1px solid #c8c8c8; }
+.cont .box5 {border-right: 1px solid #c8c8c8; }
+.cont .box6 {margin-right: 0; padding-right: 0; }
+
+.cont .box .ico-img {width: 57px; height: 57px; background: url(../img/icon.png) 0 -600px; display: block; position: absolute; left: 0; top: 6px; cursor: pointer;}
+.cont .box .ico-img:hover {background-position: 0 -660px;}
+
+.cont .box .ico-tit {padding-left: 67px; font-size: 18px; color:#2c94c4;}
+.cont .box .ico-desc {padding-left: 67px; color: #878787; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;}
+
+.cont .box2 .ico-img {background-position: 0 -720px; cursor: col-resize;}
+.cont .box2 .ico-img:hover {background-position: 0 -780px;}
+
+.cont .box3 .ico-img {background-position: 0 -840px; cursor: all-scroll;}
+.cont .box3 .ico-img:hover {background-position: 0 -900px;}
+
+.cont .box4 .ico-img {background-position: 0 -960px; cursor: crosshair;}
+.cont .box4 .ico-img:hover {background-position: 0 -1020px;}
+
+.cont .box5 .ico-img {background-position: 0 -1080px; cursor: e-resize;}
+.cont .box5 .ico-img:hover {background-position: 0 -1140px;}
+
+.cont .box6 .ico-img {background-position: 0 -1200px; cursor: help;}
+.cont .box6 .ico-img:hover {background-position: 0 -1260px;}
+
+/*notice*/
+.notice {position: relative;  }
+.notice h4 {font-size: 14px; color: #0093bd; font-weight: bold; margin-bottom: 3px; }
+.notice li {background: url(../img/dot.gif) no-repeat 0px 8px; padding-left: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;  }
+.notice .more {position: absolute; right: 0; top:5px; background: url(../img/more.png)no-repeat; width: 16px; height: 16px; display: block; }
+
+/*notice2*/
+.notice2 {position: relative; }
+.notice2 h4 {font-size: 14px; color: #0093bd; font-weight: bold; margin-bottom: 3px;}
+.notice2 ul {  }
+.notice2 li {overflow: hidden; background: url(../img/dot.gif) no-repeat 0px 8px; padding-left: 8px; }
+.notice2 li a {float: left; width: 60%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;    }
+.notice2 li .time{float: right; width: 30%; text-align : right; }
+.notice2 .more {position: absolute; right: 0; top:5px; background: url(../img/more.png)no-repeat; width: 16px; height: 16px; display: block;}
+
+/*notice3*/
+.notice3 {position: relative;  }
+.notice3 h4 {font-size: 14px; color: #0093bd; font-weight: bold; margin-bottom: 3px;  }
+.notice3 ul {  }
+.notice3 li {position: relative; height: 60px; padding-left: 60px;  }
+.notice3 li a {  }
+.notice3 li a img {position: absolute; left: 0; top: 0; border: 1px solid #390; }
+.notice3 li a strong {display: block; padding-top: 5px;}
+.notice3 li a em {display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis }
+.notice3 .more {position: absolute; right: 0; top:5px; background: url(../img/more.png)no-repeat; width: 16px; height: 16px; display: block;  }
+
+/*notice4*/
+.notice4 {border: 1px solid #ccc; margin-top: 10px; position: relative; }
+.notice4 h4 {color: #0093bd;  padding: 8px 10px; border-bottom:  1px solid #ccc;}
+.notice4 h4 em {color: #cf3292;}
+.notice4 ul {padding : 10px; }
+.notice4 ul li {background: url(../img/dot.gif) no-repeat 0px 8px; overflow: hidden; padding-left: 10px;}
+.notice4 ul li a {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; float: left; width: 65%; }
+.notice4 ul li .time2 {float: right; width: 30%; text-align: right;}
+.notice4 .more {position: absolute; right: 8px; top:8px; display: block;  }
+
+/*notice-hover*/
+.notice-hover {position: relative; }
+.notice-hover h4 {font-size: 14px; color: #0093bd; font-weight: bold; margin-bottom: 3px; }
+.notice-hover ul {overflow: hidden; }
+.notice-hover ul li {float: left; width: 33.33333%; text-align: center;}
+.notice-hover ul li a span {position: relative; display: block; width: 90px; height: 90px; margin:0 auto; line-height: 90px;}
+.notice-hover li a img {width: 90px; height: 90px;}
+.notice-hover li a em {visibility: hidden; position: absolute; left: 0; top: 0; background: #000; color:#fff; width: 100%; height: 100%; }
+.notice-hover li a span:hover em { visibility: visible; /*background: rgba(0, 0, 0, 0.5);*//*background: #000; opacity: 0.5; filter : alpha(opacity=50);*/background: url(../img/dot2.png);}
+.notice-hover li a strong {display: block; padding-top: 3px;}
+.notice-hover .more {position: absolute; right: 0; top:5px; background: url(../img/more.png)no-repeat; width: 16px; height: 16px; display: block;  }
+
+/*notice-hover2*/
+.notice-hover2 {position: relative; }
+.notice-hover2 ul {overflow: hidden; }
+.notice-hover2 ul li {float: left; width: 33.33333%; text-align: center;}
+.notice-hover2 ul li a span {position: relative; display: block; width: 90px; height: 90px; margin:0 auto; }
+.notice-hover2 li a img {width: 90px; height: 90px;}
+.notice-hover2 li a em {visibility: hidden; position: absolute; left: 0; bottom: 0; background: #000; color:#fff; width: 100%; }
+.notice-hover2 li a span:hover em { visibility: visible; /*background: rgba(0, 0, 0, 0.5);*//*background: #000; opacity: 0.5; filter : alpha(opacity=50);*/background: url(../img/dot2.png); }
+.notice-hover2 li a strong {display: block; padding-top: 3px;}
+
+/*tab_menu*/
+.tab_menu {position: relative; border : 1px solid #ccc; height: 105px; padding: 8px;}
+.tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc;  }
+.tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px;  margin-bottom: -1px;}
+.tab_menu ul li a {display: block; padding: 5px 10px;  }
+.tab_menu ul li ul {position: absolute; left: 10px; top: 50px; border:0; }
+.tab_menu ul li ul li {float: none; border : 0; }
+.tab_menu ul li ul li a {padding-top: 0; background: url(../img/dot.gif) no-repeat 0px 8px; }
+.tab_menu ul li.active {background-color: #2c94c4; 	}
+.tab_menu ul li.active a {color:#fff;}
+.tab_menu ul li.active ul li a {color : #333;}
+
+/*ad*/
+.ad {position: relative;}
+.ad h4 {font-size: 14px; color: #0093bd; font-weight: bold; margin-bottom: 3px;}
+.ad ul {overflow: hidden;}
+.ad ul li {float: left; width: 33.3%; text-align: center;}
+.ad ul li img {width: 90px; height: 90px;}
+.ad .more {position: absolute; right: 0; top: 5px; background: url(../img/more.png) no-repeat; width: 16px; height: 16px; display: block;}
+
+/*gallery*/
+/*.gallery {border: 1px solid #ccc; position: relative; }
+.gallery h4 {font-size: 14px ;  color: #0093bd; font-weight: bold; border-bottom : 1px solid #ccc; padding: 8px;}
+.gallery ul {overflow: hidden; position: absolute; top: 10px; right: 8px;}
+.gallery ul li { float: left;   }
+.gallery ul li img {display: block;}
+.gallery a.gg {display: block; padding : 0 10px;}
+.gallery a.gg img {margin-top : 8px; }*/
+
+.gallery {border: 1px solid #ccc; position: relative;}
+.gallery h4 {font-size: 14px; color : #0093bd; font-weight: bold; padding: 8px 0 6px 11px; border-bottom: 1px solid #ccc;}
+.gallery .gallery_btn {position: absolute; right: 9px; top: 9px;}
+.gallery .gallery_btn ul {overflow: hidden;}
+.gallery .gallery_btn ul li {float: left;}
+.gallery .gallery_img {width: 266px; height: 208px; overflow: hidden; margin: 10px;}
+
+/*login-wrap*/
+#login-wrap {border: 1px solid #c8c8c8; height: 118px; margin-bottom: 15px; position: relative;}
+#login-header {width: 257px; height: 25px;  position: absolute; left:15px; top: 10px;  }
+#login-header .login_level {overflow: hidden; margin-top: 3px; }
+#login-header .login_level li {float: left;  }
+#login-header .login_info {position: absolute; left:65px; top: 0;}
+#login-header .login_info .ip {position: absolute; left: 135px; top: 0; width: 70px;}
+#login-header .login_info span {font-weight: bold; color: #0093bd; text-decoration: underline; text-transform: uppercase;}
+#login-contents { position: absolute; left: 15px; top : 37px; }
+#login-contents .dt label {width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0;}
+#login-contents .input_text {width: 170px; height: 16px; color: #444; border: 1px solid #bebebe; padding: 2px 2px 3px 4px; margin-bottom: 3px;}
+#login-contents .keep {position: absolute; left: 183px; top: 2px; width: 80px;}
+#login-contents .input_check {vertical-align: -2px;  }
+#login-contents .sumit {position: absolute; top : 24px; left: 0px;  }
+#login-footer {position: absolute; left: 15px; top : 90px;}
+#login-footer li {display: inline; padding: 0 3px 0 6px; background: url(../img/bar.gif) no-repeat 0 2px; }
+#login-footer li:first-child {background: none; padding-left: 0; font-weight: bold;}
+
+/*footer*/
+#footer ul {text-align: center; margin-top : 30px;  }
+#footer ul li {display: inline;  background: url(../img/bar.gif) no-repeat 0 2px ;padding: 0 9px 0 12px; }
+#footer ul li:first-child {background: none; padding-left: 0;}
+#footer ul li a {  }
+#footer .foot p {padding-top: 20px; text-align: center; }
+#footer address { padding-top: 20px; }
+.foot address {text-align: center;}
+.w3c {padding-top: 30px; text-align: center; }
+
+
+
+
+
